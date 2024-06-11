@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    align-items: center; 
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  a {
+    background-color: #ffffff;
+    color: #9D836F;
+    padding: 10px 20px;
+    border: 1px solid #9D836F;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    text-align: center; 
+  }
+  
+  a:hover {
+    background-color: #ffffff;
+  }
+  

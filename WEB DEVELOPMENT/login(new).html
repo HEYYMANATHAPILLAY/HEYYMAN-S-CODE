@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CauseCascade</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Additional CSS styles specific to this page */
+    /* Ensure center alignment for forms */
+    .form-container {
+      margin: 50px auto;
+      width: 70%;
+      max-width: 500px;
+      padding: 20px;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-container p {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="Logo.png" alt="CauseCascade Logo" />
+    </div>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Get Involved</a>
+    <a href="#">Resources</a>
+    <a href="#">Contact Us</a>
+
+    <div class="login-signup">
+      <a href="login(new).html">Login</a>
+      <a href="SignUp(new).html">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - CauseCascade</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Link to your CSS file -->
+  <style>
+    /* Additional CSS styles specific to this page */
+    /* Ensure center alignment for forms */
+    .form-container {
+      margin: 50px auto;
+      width: 70%;
+      max-width: 500px;
+      padding: 20px;
+      border: 1px solid #9D836F;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #000000; /* Changed color to black */
+    }
+
+    .form-container p {
+      font-size: 16px;
+      color: #000000; /* Changed color to black */
+      margin-bottom: 20px;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-container label {
+      font-size: 18px; /* Increased font size */
+      color: #9D836F;
+      margin-bottom: 5px;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="password"],
+    .form-container input[type="submit"] {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #9D836F;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #ffffff; /* White background */
+      color: #9D836F; /* Changed text color to #9D836F */
+      cursor: pointer;
+      border: 1px solid #9D836F; /* Added border with color code #9D836F */
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #45a049;
+      color: #ffffff; /* White text color on hover */
+    }
+
+    /* Additional CSS for forgot password link */
+    .forgot-password {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .forgot-password a {
+      border: 1px solid #9D836F; /* Added border with color code #9D836F */
+      background-color: #ffffff;
+      border-radius: 6px;
+      font-size: 14px;
+      padding: 7px 12px;
+      color: #9D836F; /* Changed text color to #9D836F */
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .forgot-password a:hover {
+      background-color: #f0f0f0;
+      color: #8c6f53;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align: center;">Welcome back to CauseCascade!</h2>
+  <p style="text-align: center;">Log in to your account to continue supporting causes and managing campaigns.</p>
+
+  <div class="form-container">
+    <form id="loginForm" action="login_process.php" method="POST"> 
+      <label for="username" style="color: #000000;">Login</label> <!-- Changed color to black -->
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+    <div class="forgot-password">
+      <a href="forgotpassword.html">Forgot Password? Reset it now</a> <!-- Added "Reset it now" next to "Forgot Password?" -->
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to redirect user to profile management page after successful login
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      // Prevent the form from submitting
+      event.preventDefault();
+
+      // Perform your login validation here
+      // For simplicity, let's assume the login is successful
+      // You can add your own validation logic here
+
+      // Redirect user to profile management page
+      window.location.href = "profilemanagement.html";
+    });
+  </script>
+
+</body>
+</html>

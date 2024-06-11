@@ -1,0 +1,37 @@
+/* All CSS styles moved here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 20px;
+  }
+  
+  .logo {
+    width: 720px;
+    height: 364px;
+  }
+  
+  .text-block {
+    margin-right: 200px;
+  }
+  
+  .text-block h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text-block p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

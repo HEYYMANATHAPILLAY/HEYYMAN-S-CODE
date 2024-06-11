@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CauseCascade</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Additional CSS styles specific to this page */
+    /* Ensure center alignment for forms */
+    .form-container {
+      margin: 50px auto;
+      width: 70%;
+      max-width: 500px;
+      padding: 20px;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-container p {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="Logo.png" alt="CauseCascade Logo" />
+    </div>
+    <a href="#">Home</a>
+    <a href="#">Profile Management</a>
+    <a href="campaign creation (NEW).html">Campaign Creation</a>
+    <a href="#">Donation Process</a>
+    <a href="Countribution Managment (NEW).html">Contribution Management</a>
+    <a href="#">
+        <img src="Profile.png" alt="Image of Login/Sign Up options" width="30" height="30">
+      </a>
+      <div>
+        <a href="#"></a>
+        
+      </div>
+  </div>
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribution Management</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #ffffff; /* Add background color to the body */
+      }
+      .container {
+        text-align: center;
+        width: 60%; /* Add width to the container */
+        max-width: 800px; /* Limit the maximum width of the container */
+        margin: 0 auto; /* Center the container */
+      }
+      .description {
+        margin-bottom: 40px;
+      }
+      .box {
+        border: 1px solid #B58F6F;
+        border-radius: 5px;
+        padding: 20px;
+        width: 100%;
+        margin: 20px auto;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      th, td {
+        border: 1px solid #B58F6F;
+        padding: 8px;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .receipts-button {
+        padding: 5px 10px;
+        font-size: smaller;
+        background-color: white; /* Changed button background color */
+        color: #B58F6F; /* Changed button text color */
+        border: 1px solid #B58F6F;
+        border-radius: 5px;
+      }
+      .receipts-button:hover {
+        background-color: #B58F6F; /* Changed button background color on hover */
+        color: white; /* Changed button text color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contribution Management</h1>
+      <h2>Donation History</h2>
+      <p>Stay informed about your donations and their impact with robust contribution management tools. From viewing your donation history to accessing receipts and tracking the progress of your contributions, Causecascade makes it easy to manage your support for causes you care about.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Organization</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023-11-21</td>
+            <td>American Red Cross</td>
+            <td>$50.00</td>
+          </tr>
+          <tr>
+            <td>2023-12-12</td>
+            <td>Doctors Without Borders</td>
+            <td>$100.00</td>
+          </tr>
+          <tr>
+            <td>2024-01-15</td>
+            <td>World Wildlife Fund</td>
+            <td>$25.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Download Receipts</h2>
+      <form action="generate_receipt.php" method="post">
+        <!-- Add form fields here if needed -->
+        <button class="receipts-button" type="submit">Download Receipts</button>
+      </form>
+    
+    </div>
+  </body>
+  </html>

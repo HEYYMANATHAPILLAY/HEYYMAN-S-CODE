@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CauseCascade</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Additional CSS styles specific to this page */
+    /* Ensure center alignment for forms */
+    .form-container {
+      margin: 50px auto;
+      width: 70%;
+      max-width: 500px;
+      padding: 20px;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-container p {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="Logo.png" alt="CauseCascade Logo" />
+    </div>
+    <a href="#">Home</a>
+    <a href="#">Profile Management</a>
+    <a href="campaign creation (NEW).html">Campaign Creation</a>
+    <a href="#">Donation Process</a>
+    <a href="Countribution Managment (NEW).html">Contribution Management</a>
+    <a href="#">
+        <img src="Profile.png" alt="Image of Login/Sign Up options" width="30" height="30">
+      </a>
+      <div>
+        <a href="#"></a>
+        
+      </div>
+  </div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campaign Creation</title>
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+  <div class="campaign-wrapper">
+    <h2 class="campaign-header">Campaign Creation</h2>
+    <div class="campaign-details">
+      <form action="submit_campaign.php" method="post" enctype="multipart/form-data">
+        <h3>Campaign Details</h3>
+        <label for="campaign-title">Campaign Title:</label>
+        <input type="text" id="campaign-title" name="campaign-title" placeholder="Enter Campaign Title" required>
+        <label for="campaign-description">Campaign Description:</label>
+        <textarea id="campaign-description" name="campaign-description" placeholder="Describe Your Campaign's Purpose and Impact" required></textarea>
+        <label for="campaign-goal">Campaign Goal:</label>
+        <input type="number" id="campaign-goal" name="campaign-goal" placeholder="Enter Fundraising Goal Amount" required>
+        <label for="target-completion-date">Target Completion Date:</label>
+        <input type="date" id="target-completion-date" name="target-completion-date" required>
+
+        <h3>Multimedia Content</h3>
+        <label for="upload-images-videos">Upload Images/Videos: [Upload Compelling visuals to showcase Your Cause]</label>
+        <input type="file" id="upload-images-videos" name="upload-images-videos" multiple>
+        <label for="campaign-story">Campaign Story: [Share a story or Testimonial to Engage Potential Donors]</label>
+        <textarea id="campaign-story" name="campaign-story"></textarea>
+
+        <h3>Campaign Settings</h3>
+        <label for="visibility">Visibility: [Select Visibility Setting - Public, Private, or Hidden]</label>
+        <select id="visibility" name="visibility" required>
+          <option value="public">Public</option>
+          <option value="private">Private</option>
+          <option value="hidden">Hidden</option>
+        </select>
+        <label for="category">Category: [Choose a Category for Your Campaign - Education, Environment, Health, etc.]</label>
+        <select id="category" name="category" required>
+          <option value="education">Education</option>
+          <option value="environment">Environment</option>
+          <option value="health">Health</option>
+        </select>
+        <label for="tags">Tags:</label>
+        <input type="text" id="tags" name="tags" placeholder="Add Tags to Help Users Discover Your Campaign (e.g., #Education, #EnvironmentalConservation)">
+
+        <div class="button-container">
+          <button class="button">Share Your Campaign</button>
+          <button class="button">Invite Supporters</button>
+          <div class="double-button-container">
+            <button class="button">Preview Your Campaign</button>
+            <button class="button">Create Campaign</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

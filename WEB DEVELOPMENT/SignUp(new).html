@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CauseCascade</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Additional CSS styles specific to this page */
+    /* Ensure center alignment for forms */
+    .form-container {
+      margin: 50px auto;
+      width: 70%;
+      max-width: 500px;
+      padding: 20px;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .form-container p {
+      font-size: 16px;
+      color: #666666;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">
+      <img src="Logo.png" alt="CauseCascade Logo" />
+    </div>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Get Involved</a>
+    <a href="#">Resources</a>
+    <a href="#">Contact Us</a>
+
+    <div class="login-signup">
+      <a href="login(new).html">Login</a>
+      <a href="SignUp(new).html">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - CauseCascade</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Additional CSS styles specific to this page */
+    /* Ensure center alignment for forms */
+    .form-container {
+      margin: 50px auto;
+      width: 70%;
+      max-width: 500px;
+      padding: 20px;
+      border: 1px solid #9D836F;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center; /* Center-align text within the form container */
+    }
+
+    .form-container h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #9D836F;
+    }
+
+    .form-container p {
+      font-size: 16px;
+      color: #9D836F;
+      margin-bottom: 20px;
+    }
+
+    .form-container form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-container label {
+      text-align: left; /* Align labels to the left */
+      color: #9D836F;
+      margin-bottom: 5px; /* Add some space between labels */
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"],
+    .form-container input[type="submit"] {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .form-container input[type="checkbox"] {
+      margin-bottom: 15px;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #ffffff;
+      color: #9D836F;
+      border: 1px solid #9D836F;
+      cursor: pointer;
+    }
+
+    .form-container input[type="submit"]:hover {
+      background-color: #9D836F;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Sign Up Form</h2>
+  <p>Join the CauseCascade Community and Make a Difference Today!</p>
+
+  <div class="form-container">
+    <form action="SignUp.php" method="POST"> <!-- Replace "signup_process.php" with the actual signup processing script -->
+      <label for="fullname">Full Name</label>
+      <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+      <label for="email">Email</label>
+      <input type="email" name="email" placeholder="Email" required>
+      <label for="create_password">Create Password</label>
+      <input type="password" name="create_password" placeholder="Create Password" required>
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <label for="user_type">User Type</label>
+      <input type="text" name="user_type" placeholder="User Type" required>
+      <input type="checkbox" id="terms" required>
+      <label for="terms">I agree to the terms and conditions</label>
+      <input type="submit" value="Register">
+    </form>
+  </div>
+
+</body>
+</html>
